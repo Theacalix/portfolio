@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import clickTile from './clickTile.PNG';
+import heritageFarmed from './heritageFarmed.png';
 
 class ProjectPage extends React.Component {
   render() {
@@ -19,8 +20,8 @@ class ProjectPage extends React.Component {
 
 class Site extends React.Component {
   render() {
-    return (<> //react fragment
-      // <Nav/>
+    return (<>
+      {/*<Nav/>*/}
       <ProjectPage
         id='map'
         imgUrl={clickTile}
@@ -29,7 +30,7 @@ class Site extends React.Component {
       />
       <ProjectPage
       id='brand'
-      imgUrl={}
+      imgUrl={heritageFarmed}
       title='Heritage Farmed'
       intro='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
       />
