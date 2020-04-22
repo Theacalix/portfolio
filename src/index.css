@@ -4,8 +4,10 @@
 
 body, html, #root {
   height: 100%;
+  width: 100%;
   color: #2f1343;
   font-family: 'Barlow', sans-serif;
+  /* overflow-x: hidden; */
 }
 
 h2 {
@@ -25,6 +27,7 @@ img {
   height: 100%;
   padding: 25vh 2em;
   /* font-size: .75em; */
+  z-index: 1;
 }
 
 .page {
@@ -44,14 +47,49 @@ img {
   align-items: center;
 }
 
-.upper img {
+.upper img, .sideBySide img {
   width: 50%;
   max-height: 80%;
   margin: 0 1em;
 }
 
-.upper div {
+.upper div, .textBox {
   margin: 0 1em;
+}
+
+.flex {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.flex img {
+  height: 50vh;
+  width: 24vh;
+  /* THIS IS SO DUMB WTF */
+  margin: 1em;
+}
+
+.sideBySide {
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  flex-flow: row-reverse;
+}
+
+.imgRow {
+  display: flex;
+  position: relative;
+  left: -6em;
+  width: 99vw;
+}
+
+.imgRow img {
+  width: 10%;
+  flex: 1 1 0;
 }
 
 .text {
@@ -75,7 +113,12 @@ img {
 .lower {
   display: flex;
   flex-direction: column;
-  padding: 0 2em 2em 6em;
+  padding-left: 1em;
+  padding: 0 3em 0 1em;
+}
+
+#graph {
+  background: white;
 }
 
 .fa-arrow-up {
