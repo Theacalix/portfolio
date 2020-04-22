@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.c61c1056.chunk.css",
+    "main.js": "/portfolio/static/js/main.a9c43313.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.a9c43313.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.b37861ed.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.b37861ed.js.map",
+    "static/js/2.71819bae.chunk.js": "/portfolio/static/js/2.71819bae.chunk.js",
+    "static/js/2.71819bae.chunk.js.map": "/portfolio/static/js/2.71819bae.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.eb0d394afe12b36ab2c275ff45319672.js": "/portfolio/precache-manifest.eb0d394afe12b36ab2c275ff45319672.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.c61c1056.chunk.css.map": "/portfolio/static/css/main.c61c1056.chunk.css.map",
+    "static/js/2.71819bae.chunk.js.LICENSE.txt": "/portfolio/static/js/2.71819bae.chunk.js.LICENSE.txt",
+    "static/media/AddHabit.gif": "/portfolio/static/media/AddHabit.85340738.gif",
+    "static/media/AddTask.gif": "/portfolio/static/media/AddTask.8fae379b.gif",
+    "static/media/CompleteHabit.gif": "/portfolio/static/media/CompleteHabit.264a1142.gif",
+    "static/media/altLogos.png": "/portfolio/static/media/altLogos.62c7d7ae.png",
+    "static/media/clickTile.PNG": "/portfolio/static/media/clickTile.73fe2cb9.PNG",
+    "static/media/conferenceDemo.JPG": "/portfolio/static/media/conferenceDemo.ac8124e9.JPG",
+    "static/media/hardwareLayout.jpg": "/portfolio/static/media/hardwareLayout.3efde84a.jpg",
+    "static/media/heritageFarmed.png": "/portfolio/static/media/heritageFarmed.3f997868.png",
+    "static/media/heritageFarmedBrandStandards.pdf": "/portfolio/static/media/heritageFarmedBrandStandards.9441ed48.pdf",
+    "static/media/logo.png": "/portfolio/static/media/logo.c5277cda.png",
+    "static/media/mapmakerDisplay.png": "/portfolio/static/media/mapmakerDisplay.09ae1fb6.png",
+    "static/media/mapmakerEdit.png": "/portfolio/static/media/mapmakerEdit.f479aae5.png",
+    "static/media/otherLogo.png": "/portfolio/static/media/otherLogo.9e144302.png",
+    "static/media/packaging.png": "/portfolio/static/media/packaging.026f9387.png",
+    "static/media/profile.JPG": "/portfolio/static/media/profile.62760cf3.JPG",
+    "static/media/smallLogo.png": "/portfolio/static/media/smallLogo.c84e20a0.png",
+    "static/media/taskPage.png": "/portfolio/static/media/taskPage.dfc9eef8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b37861ed.js",
+    "static/js/2.71819bae.chunk.js",
+    "static/css/main.c61c1056.chunk.css",
+    "static/js/main.a9c43313.chunk.js"
+  ]
+}
