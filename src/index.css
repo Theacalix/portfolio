@@ -26,9 +26,6 @@ p {
   line-height: 1.5;
 }
 
-/* img {
-  width: 100%;
-} */
 .nav {
   display: flex;
   flex-direction: column;
@@ -130,7 +127,7 @@ p {
 .page {
   width: 100%;
   min-height: 100%;
-  padding: 2em 2em 2em 5em;
+  padding: 1em 2em 1em 5em;
 }
 
 /* .page.show {
@@ -139,10 +136,28 @@ p {
 .more {
   text-decoration: none;
   font-weight: bold;
+  background: none;
+  border: none;
+  display: block;
 }
 
 .more:hover {
   font-style: italic;
+}
+
+/* IMG STYLING */
+.imgRow {
+  display: flex;
+  position: relative;
+  left: -6em;
+  width: 99vw;
+  background: white;
+  align-items: center;
+}
+
+.imgRow .imgWrapper {
+  width: 10%;
+  flex: 1 1 0;
 }
 
 .imgWrapper {
@@ -151,11 +166,18 @@ p {
 
 .imgWrapper img {
   /* object-fit: contain; */
-  max-width: 40vw;
-  max-height: 80vh;
   width: auto;
   height: auto;
   display: block;
+}
+
+.imgRow .imgWrapper img {
+  width: 100%;
+}
+
+.upper img, .sideBySide img {
+  max-width: 40vw;
+  max-height: 80vh;
 }
 
 .imgWrapper svg {
@@ -186,7 +208,7 @@ p {
 
 .imgPopup img {
   max-width: 90%;
-  max-width: 90%;
+  max-height: 90%;
   width: auto;
   height: auto;
   display: block;
@@ -212,7 +234,7 @@ p {
   align-items: center;
 }
 
-.upper div, .textBox {
+.text, .textBox {
   margin: 0 1em;
 }
 
@@ -226,29 +248,60 @@ p {
 .flex img {
   height: 50vh;
   width: 24vh;
-  /* THIS IS SO DUMB WTF */
-  margin: 1em;
+}
+
+/* specific styling for gifs that need to be cropped */
+.imgContainer {
+  overflow: hidden;
+  height: 250px;
+  width: 132px;
+  margin: 0 .75em;
+  /* flex-basis: 0 0 auto; */
+}
+
+.imgContainer img {
+  margin: -35px 0 0 -10px;
+}
+
+/* image screens without crop */
+.screenImg {
+  margin: 0 .5em;
+  height: 60vh;
+  border: 2px solid grey;
+}
+
+.fakePhone {
+  background: white;
+  border-radius: 20px;
+  margin: 0 .5em;
+}
+
+.circleBtn {
+  border-radius: 500px;
+  border: 2px solid grey;
+  height: 30px;
+  width: 30px;
+  margin: .5em auto;
+  /* position: relative;
+  top: -40px; */
+}
+
+.cameraLine {
+  border-radius: 500px;
+  border: 2px solid grey;
+  /* height: 30px; */
+  width: 30px;
+  margin: .75em auto;
 }
 
 .sideBySide {
   display: flex;
   align-items: center;
+  margin: 2em 0;
 }
 
 .right {
   flex-flow: row-reverse;
-}
-
-.imgRow {
-  display: flex;
-  position: relative;
-  left: -6em;
-  width: 99vw;
-}
-
-.imgRow img {
-  width: 10%;
-  flex: 1 1 0;
 }
 
 .text {
@@ -282,4 +335,18 @@ p {
 
 .fa-arrow-up {
   align-self: center;
+}
+
+#aboutContent {
+  position: relative;
+  top: -20vh;
+}
+
+#portrait {
+  height: 100%;
+  max-height: 100%;
+  min-width: 85vh;
+  position: relative;
+  bottom: -1em;
+  flex: 1 0 auto;
 }
