@@ -138,11 +138,14 @@ p {
   font-weight: bold;
   background: none;
   border: none;
-  display: block;
+  width: fit-content;
+  padding: .25em .5em;
 }
 
 .more:hover {
-  font-style: italic;
+  /* font-style: italic; */
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 5px;
 }
 
 /* IMG STYLING */
@@ -349,4 +352,12 @@ p {
   position: relative;
   bottom: -1em;
   flex: 1 0 auto;
+}
+
+@media screen and (max-width: 900px) {
+  #portrait {
+    height: 80%;
+    min-width: 68vh;
+    bottom: calc(-10% - 1em);
+  }
 }

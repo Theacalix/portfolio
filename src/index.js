@@ -371,7 +371,7 @@ class ProjectPage extends React.Component {
         <div className = "text">
           <h2>{this.props.title}</h2>
           {this.props.intro}
-          {(this.props.showMore && !this.state.showing) ? <button className="more" onClick={this.toggleContent}>Learn More <FontAwesomeIcon
+          {(this.props.showMore && !this.state.showing) ? <button type="button" className="more" onClick={this.toggleContent}>Learn More <FontAwesomeIcon
           icon="arrow-right"/></button> : ''}
         </div>
       </div>
@@ -391,7 +391,7 @@ class Content extends React.Component {
             className="lower"
           >
             {moreContent[this.props.parentName]}
-            <button className="more" onClick={this.props.onClick}>Close</button>
+            <button type="button" className="more" onClick={this.props.onClick}>Close</button>
           </Element>);
   }
 }
