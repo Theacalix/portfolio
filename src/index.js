@@ -333,6 +333,7 @@ class ProjectPage extends React.Component {
     this.state = {
       showing: false
     }
+    console.log(this.state.showing);
     this.toggleContent = this.toggleContent.bind(this);
     this.setBackground = this.setBackground.bind(this);
   }
@@ -350,6 +351,20 @@ class ProjectPage extends React.Component {
     };
   }
 
+  //  WORKS BUT TRIGGERS SCROLLDOWN WHICH IS NOT WANTED 
+  // componentDidMount() {
+  //   console.log(window.location.href);
+  //   let parsedUrl = window.location.href.split('#');
+  //   console.log(parsedUrl);
+  //
+  //   if(parsedUrl.length === 2) {
+  //     if(parsedUrl[1] === this.props.id) {
+  //       this.setState({showing: true});
+  //     }
+  //     //else do nothing
+  //   }
+  // }
+
   render() {
     let image, more;
     if (this.props.img) {
@@ -365,7 +380,7 @@ class ProjectPage extends React.Component {
             />
     }
     return (
-      <Element name = {this.props.name} className = {`page ${this.state.showing ? 'show':''}`} style={this.setBackground()}>
+      <Element id = {this.props.id} name = {this.props.name} className = {`page ${this.state.showing ? 'show':''}`} style={this.setBackground()}>
       <div className={`upper ${this.props.reverse ? 'reverse': ''}`}>
         {image}
         <div className = "text">
@@ -418,6 +433,7 @@ class Site extends React.Component {
       <ProjectPage
         i={1}
         name='todo'
+        id='achieveIt'
         notImg=<PhoneWrapper screen=<img className="screenImg" src={taskPage} alt="task screen"/>/>
         title='AchieveIt'
         intro=<p>A productivity app designed for people with mental illness. Designed to be gentle, structured, and easy to use. This app can be a helpful tool for people with difficulty remembering tasks and executing them at the right time and place.</p>
@@ -425,6 +441,7 @@ class Site extends React.Component {
       <ProjectPage
         i={2}
         name='brand'
+        id='heritageFarmed'
         reverse={true}
         img={{src: heritageFarmed, alt: 'heritage farmed logo', dark: true}}
         title='Heritage Farmed'
@@ -433,6 +450,7 @@ class Site extends React.Component {
       <ProjectPage
         i={1}
         name='map'
+        id='mapMaker'
         img={{src: clickTile, alt: 'map maker screen'}}
         title='Map Maker'
         intro=<p>MapMaker fills a need in the <TooltipBase word='tabletop RPG' def='RPG stands for Role Play Game. Tabletop means the game is played by a group gathering in-person around a table, instead of virtually on a computer.'/> community by being an easy to use map creation web app that takes advantage of modern technology to enhance in-person game play.</p>
