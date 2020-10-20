@@ -27,6 +27,14 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run deploy`
+
+Deploys project to github pages by calling npm run build and then gh-pages specific code to deploy to github
+
+REMEMBER TO RE ADD CUSTOM DOMAIN IN GITHUB SETTINGS
+
+TODO: fix erasure of custome domain when redeploying 
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**

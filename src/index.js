@@ -41,6 +41,7 @@ import addHabit from './AddHabit.gif';
 import completeHabit from './CompleteHabit.gif';
 import headshot from './headshot.jpg';
 import portrait from './portrait.gif';
+import resume from './EmilyHeryResume.pdf';
 
 
 library.add(faCircle,
@@ -351,7 +352,7 @@ class ProjectPage extends React.Component {
     };
   }
 
-  //  WORKS BUT TRIGGERS SCROLLDOWN WHICH IS NOT WANTED 
+  //  WORKS BUT TRIGGERS SCROLLDOWN WHICH IS NOT WANTED
   // componentDidMount() {
   //   console.log(window.location.href);
   //   let parsedUrl = window.location.href.split('#');
@@ -579,6 +580,7 @@ let moreContent = {
       <p>
         I do great in teams. I can help people hear and understand each other. Because I'm standing at the intersection of tech and design, I can bridge the gap between highly technical individuals and highly creative individuals and “translate” their perspectives from one to the other.
       </p>
+      {/*<a href={resume}>x</a>*/}
     </>
 }
 
