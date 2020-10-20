@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "14f5eeffaf53e456c854dc32cf6679f4",
+    "revision": "f1860bb1479b4062e0ea16cbe914fd9b",
     "url": "/index.html"
   },
   {
-    "revision": "e68ffacff52e85c0d42b",
+    "revision": "b5e0f00e67b1f7e8017c",
     "url": "/static/css/main.99b0847b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.0bccaeeb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e68ffacff52e85c0d42b",
-    "url": "/static/js/main.2a128a59.chunk.js"
+    "revision": "b5e0f00e67b1f7e8017c",
+    "url": "/static/js/main.9291fdc7.chunk.js"
   },
   {
     "revision": "4c15ceb5499f6abee85b",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "264a1142bd2fe96cff0a487ff691ee92",
     "url": "/static/media/CompleteHabit.264a1142.gif"
+  },
+  {
+    "revision": "77eb79f0514503d4aa307eda31c70abf",
+    "url": "/static/media/EmilyHeryResume.77eb79f0.pdf"
   },
   {
     "revision": "73fe2cb94df8cc1c608a41c7cecb4749",
